@@ -100,6 +100,7 @@ section {
     border-bottom: 2px solid #dddddd;
     color: black;
     text-align: left;
+    font-size: 1.3em;
 }
 .styled-table th,
 .styled-table td {
