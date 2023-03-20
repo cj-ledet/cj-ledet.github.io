@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booth Ticket Tracker</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
@@ -19,14 +20,24 @@
             </li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="account.html">Account</a></li>
-            <li style="float: right;"><a href="https://booth-auth.auth.us-west-1.amazoncognito.com/login?client_id=2l3ebv8g94a6m326i26agcoc5a&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Findex.html">Login</a></li>
+            <!--<li style="float: right;"><a href="https://booth-auth.auth.us-west-1.amazoncognito.com/login?client_id=2l3ebv8g94a6m326i26agcoc5a&response_type=code&scope=email+openid+phone&redirect_uri=http%3A%2F%2Flocalhost%3A8000%2Findex.html">Login</a></li>-->
           </ul>
     </header>
 
-    <section>
-        <!--HomePage View-->
-        <h1 style="text-align: center;">HomePage Coming Soon</h1>
-    </section>
+	<div class="loginbox">
+		<h1>Login Here</h1>
+		<form>
+			<p>Username</p>
+			<input type="text" name="username" placeholder="Enter Username">
+			<p>Password</p>
+			<input type="password" name="password" placeholder="Enter Password">
+			<input type="submit" name="" value="Login">
+			<a href="#">Forgot Password</a><br>
+			<a href="#">Don't have an account? Signup here</a>
+		</form>
+	</div>
+
+    <!--<script src="../dist/main.js"></script>-->
 
 </body>
 </html>
