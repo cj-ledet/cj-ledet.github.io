@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity": "^3.294.0",
+    "@aws-sdk/client-cognito-identity-provider": "^3.294.0"
+  },
+  "name": "booth",
+  "version": "1.0.0",
+  "main": "Cognito3.js",
+  "devDependencies": {
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

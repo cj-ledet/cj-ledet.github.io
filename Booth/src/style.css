@@ -1,0 +1,209 @@
+:root {
+    --body-bg: hsl(0,0%,20%);
+    --gold: #ffb338;
+    --light-shadow: #77571d;
+    --dark-shadow: #3e2904;
+}
+
+html, body {
+    background: var(--body-bg);
+    color: white;
+    font-family: system-ui;
+    padding: 0;
+    margin: 0;
+}
+
+/* CSS for Logo */
+.logo {
+    display: grid;
+    grid-template-areas: 'overlap';
+    place-content: center;
+    padding: 18px;
+    text-transform: uppercase;
+}
+.logo>div {
+    background-clip: text;  
+    -webkit-background-clip: text;
+    color: #363833;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    grid-area: overlap;
+    letter-spacing: 1px;
+    -webkit-text-stroke: 4px transparent;
+}
+div.logo-bg {
+    background-image: repeating-linear-gradient( 105deg, 
+      var(--gold) 0% , 
+      var(--dark-shadow) 5%,
+      var(--gold) 12%);
+    color: transparent;
+    filter: drop-shadow(5px 15px 15px black);
+    transform: scaleY(1.05);
+    transform-origin: top;
+}
+div.logo-fg {
+    background-image: repeating-linear-gradient( 5deg,  
+        var(--gold) 0% , 
+        var(--light-shadow) 23%, 
+        var(--gold) 31%);
+    color: #1e2127;
+    transform: scale(1);
+}
+
+/* CSS for Nav Bar */
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.3em;
+    overflow: hidden;
+    background-image: linear-gradient(to left top,#777275,#363636,#7AC3BF);
+}
+.nav-bar>li {
+    float: left;
+}
+.nav-bar>li>a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+}
+.nav-bar>li>a:hover {
+    background-color: #111;
+}
+
+/* CSS for Main body / Section */
+section {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+    background: grey;
+    height: 100%;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+}
+.styled-table thead tr {
+    background-color: #7AC3BF;
+    border-bottom: 2px solid #dddddd;
+    color: black;
+    text-align: left;
+    font-size: 1.3em;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 2px solid #dddddd;
+    background-color: #4d4d4d;
+}
+.styled-table tbody tr:nth-child(even) {
+    background-color: grey;
+}
+.styled-table tbody tr:hover {
+    cursor: pointer;
+    background-color: #cccccc;
+}
+.styled-table tbody tr:focus {
+    border: none;
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+.styled-table tr:last-child td:last-child {
+    border-bottom-right-radius:10px;
+}
+
+.styled-table tr:last-child td:first-child {
+    border-bottom-left-radius:10px;
+}
+
+.loginbox {
+    width: 320px;
+    height: 420px;
+    background: #ffffff;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+}
+
+.signup-box {
+    width: 320px;
+    height: 480px;
+    background: #ffffff;
+    color: #000000;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p, .signup-box p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input, .signup-box input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"],
+.signup-box input[type="text"],
+.signup-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.loginbox input[type="submit"], .signup-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox a, .signup-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover, .signup-box a:hover {
+    color: #000000;
+}

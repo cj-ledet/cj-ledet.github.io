@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booth Ticket Tracker</title>
+    <link rel="stylesheet" href="src/style.css">
+
+</head>
+<body>
+    
+    <header>
+        <ul class="nav-bar">
+            <li>
+                <div class="logo">
+                    <div class="logo-bg"> Booth </div>
+                    <div class="logo-fg"> Booth </div>
+                </div>    
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+    </header>
+
+    <div class="signup-box">
+		<h1>Reset Password</h1>
+		<form id="reset-form">
+			<p>Username</p>
+			<input type="text" id="username" name="username" placeholder="Enter Username" required>
+			<p>New Password</p>
+			<input type="password" id="password" pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$" name="password" placeholder="Enter Password" required>
+            <p>Code</p>
+			<input type="text" id="code" name="code" placeholder="Enter Reset Code" required>
+			<a href="#"><input type="submit" name="" value="Submit"></a>
+            <a href="login.html">Back</a>
+		</form>
+	</div>
+
+    <script src="../dist/main.js"></script>
+    
+</body>
+</html>
