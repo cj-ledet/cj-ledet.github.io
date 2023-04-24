@@ -1,0 +1,12 @@
+@import './_global.scss';
+
+textarea {
+    resize:both;
+    width: 20vw;
+    height: 20vh;
+    max-width: 40vw;
+}
+
+#buttons {
+    text-align: center;
+}

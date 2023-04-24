@@ -1,0 +1,40 @@
+@import './_global.scss';
+
+.questionDiv {
+    width: 100%;
+}
+
+.left {
+    display: inline-block;
+    width: 70%;
+    margin-right: 1px;
+    
+    input {
+        &[type="text"] {
+            overflow-x: auto;
+            width: 100%;
+        }
+    }
+}
+
+.right {
+    display: inline-block;
+    text-align: left;
+    width: 22%;
+    color: red;
+    margin-left: 1px;
+    i, select {
+        position:absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        padding: 3px;
+    }
+    select {
+        margin-bottom: 9vh;
+    }
+}
+
+#buttons {
+    text-align: center;
+}
